@@ -8,9 +8,26 @@
 
 import UIKit
 
+struct Movie{
+    let title: String
+    let genre: String
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var movieCollectionView: UICollectionView!
+
+    var refreshControl : UIRefreshControl = UIRefreshControl()
+    var iImage = 1
+    
+    let arrayMovie : [Movie] = [
+        Movie(title: "Kong Skull", genre: "Science Fiction"),
+        Movie(title: "Logan", genre: "Action"),
+        Movie(title: "Kong Skull", genre: "Science Fiction"),
+        Movie(title: "Logan", genre: "Action"),
+        Movie(title: "Kong Skull", genre: "Science Fiction"),
+        Movie(title: "Logan", genre: "Action"),
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +49,9 @@ class ViewController: UIViewController {
     // MARK: - Configure
     func setupCollectionView(){
         
+        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
+        movieCollectionView.addSubview(refreshControl)
+        
         movieCollectionView.delegate = self
         
         let flowLayout = UICollectionViewFlowLayout()
@@ -46,17 +66,45 @@ class ViewController: UIViewController {
         movieCollectionView.setCollectionViewLayout(flowLayout, animated: false)
     }
     
+    // MARK: - Action
+    func refresh(sender: UIRefreshControl){
+        iImage += 10
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.movieCollectionView.reloadData()
+            self.refreshControl.endRefreshing()
+        }
+    }
+    
 
 }
 
 // MARK: - UICollectionViewDataSource
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return arrayMovie.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MovieViewCell
+        
+        let movie = arrayMovie[indexPath.item]
+        
+        if let url = URL(string: "\(IMAGE_URL)\((indexPath.item + 1) * iImage)"){
+            
+            cell.loadingIndicator.startAnimating()
+            
+            cell.movieImageView.sd_setImage(with: url, completed: { (image, error, cache, url) in
+                
+                if error == nil{
+                    cell.loadingIndicator.stopAnimating()
+                }
+                
+            })
+        }
+        
+        cell.titleLabel.text = movie.title.uppercased()
+        cell.descLabel.text = movie.genre
         
         return cell
     }

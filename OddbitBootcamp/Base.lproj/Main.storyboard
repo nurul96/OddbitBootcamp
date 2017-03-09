@@ -58,11 +58,17 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7zg-9M-cqA">
+                                                    <rect key="frame" x="81" y="111.5" width="20" height="20"/>
+                                                    <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="oTS-OA-FgD" firstAttribute="leading" secondItem="mlM-xJ-Wik" secondAttribute="leading" id="6lC-gh-5Cc"/>
+                                            <constraint firstItem="7zg-9M-cqA" firstAttribute="centerX" secondItem="CPV-13-EZ3" secondAttribute="centerX" id="Bk4-io-8lZ"/>
                                             <constraint firstAttribute="trailing" secondItem="oTS-OA-FgD" secondAttribute="trailing" id="H41-W2-eSy"/>
+                                            <constraint firstItem="7zg-9M-cqA" firstAttribute="centerY" secondItem="CPV-13-EZ3" secondAttribute="centerY" id="ISJ-jl-ME2"/>
                                             <constraint firstItem="bNb-TO-6By" firstAttribute="leading" secondItem="mlM-xJ-Wik" secondAttribute="leading" id="SkU-L7-dhI"/>
                                             <constraint firstItem="CPV-13-EZ3" firstAttribute="leading" secondItem="mlM-xJ-Wik" secondAttribute="leading" id="WVW-q4-udM"/>
                                             <constraint firstItem="bNb-TO-6By" firstAttribute="top" secondItem="CPV-13-EZ3" secondAttribute="bottom" constant="5" id="c4p-aM-m2l"/>
@@ -73,6 +79,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="descLabel" destination="oTS-OA-FgD" id="vpE-5T-sRI"/>
+                                            <outlet property="loadingIndicator" destination="7zg-9M-cqA" id="5x3-Kc-YYZ"/>
                                             <outlet property="movieImageView" destination="CPV-13-EZ3" id="XsW-8N-WQV"/>
                                             <outlet property="titleLabel" destination="bNb-TO-6By" id="3x4-cl-uxp"/>
                                         </connections>

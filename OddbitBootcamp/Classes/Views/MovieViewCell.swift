@@ -10,6 +10,7 @@ import UIKit
 
 class MovieViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var movieImageView: UIImageView!{
         didSet{
             movieImageView.image = UIImage(named: "image")
