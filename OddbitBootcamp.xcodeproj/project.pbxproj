@@ -14,6 +14,7 @@
 		3A9144AA1E70F344005B1B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9144A81E70F344005B1B6E /* LaunchScreen.storyboard */; };
 		3A9144B51E70F344005B1B6E /* OddbitBootcampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9144B41E70F344005B1B6E /* OddbitBootcampTests.swift */; };
 		3A9144C01E70F344005B1B6E /* OddbitBootcampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9144BF1E70F344005B1B6E /* OddbitBootcampUITests.swift */; };
+		3A9144CE1E70F87F005B1B6E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9144CD1E70F87F005B1B6E /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3A9144BB1E70F344005B1B6E /* OddbitBootcampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OddbitBootcampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9144BF1E70F344005B1B6E /* OddbitBootcampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddbitBootcampUITests.swift; sourceTree = "<group>"; };
 		3A9144C11E70F344005B1B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A9144CD1E70F87F005B1B6E /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				3A9144A61E70F344005B1B6E /* Assets.xcassets */,
 				3A9144A81E70F344005B1B6E /* LaunchScreen.storyboard */,
 				3A9144AB1E70F344005B1B6E /* Info.plist */,
+				3A9144CD1E70F87F005B1B6E /* Test.swift */,
 			);
 			path = OddbitBootcamp;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				3A9144A21E70F344005B1B6E /* ViewController.swift in Sources */,
 				3A9144A01E70F344005B1B6E /* AppDelegate.swift in Sources */,
+				3A9144CE1E70F87F005B1B6E /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
