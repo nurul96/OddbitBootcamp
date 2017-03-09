@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     var str: String = "String"
+    let integer: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
