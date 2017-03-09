@@ -119,3 +119,15 @@ enum Warna{
 var warna: Warna = .Merah
 
 print(warna.desc)
+
+
+
+
+
+
+
+
+
+
+
+

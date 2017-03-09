@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3A9144A01E70F344005B1B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A91449F1E70F344005B1B6E /* AppDelegate.swift */; };
-		3A9144A21E70F344005B1B6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9144A11E70F344005B1B6E /* ViewController.swift */; };
 		3A9144A51E70F344005B1B6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9144A31E70F344005B1B6E /* Main.storyboard */; };
 		3A9144A71E70F344005B1B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A9144A61E70F344005B1B6E /* Assets.xcassets */; };
 		3A9144AA1E70F344005B1B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9144A81E70F344005B1B6E /* LaunchScreen.storyboard */; };
 		3A9144B51E70F344005B1B6E /* OddbitBootcampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9144B41E70F344005B1B6E /* OddbitBootcampTests.swift */; };
 		3A9144C01E70F344005B1B6E /* OddbitBootcampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9144BF1E70F344005B1B6E /* OddbitBootcampUITests.swift */; };
-		3A9144CE1E70F87F005B1B6E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9144CD1E70F87F005B1B6E /* Test.swift */; };
+		3A9144DA1E713096005B1B6E /* MovieViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9144D91E713096005B1B6E /* MovieViewCell.swift */; };
+		3A9144DC1E713534005B1B6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9144DB1E713534005B1B6E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		3A91449C1E70F344005B1B6E /* OddbitBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OddbitBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A91449F1E70F344005B1B6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A9144A11E70F344005B1B6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A9144A41E70F344005B1B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A9144A61E70F344005B1B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A9144A91E70F344005B1B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,8 +47,9 @@
 		3A9144BB1E70F344005B1B6E /* OddbitBootcampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OddbitBootcampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9144BF1E70F344005B1B6E /* OddbitBootcampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddbitBootcampUITests.swift; sourceTree = "<group>"; };
 		3A9144C11E70F344005B1B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A9144CD1E70F87F005B1B6E /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		3A9144CF1E70FD6D005B1B6E /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; };
+		3A9144D91E713096005B1B6E /* MovieViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewCell.swift; sourceTree = "<group>"; };
+		3A9144DB1E713534005B1B6E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,13 +100,12 @@
 		3A91449E1E70F344005B1B6E /* OddbitBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				3A9144D11E71231D005B1B6E /* Classes */,
 				3A91449F1E70F344005B1B6E /* AppDelegate.swift */,
-				3A9144A11E70F344005B1B6E /* ViewController.swift */,
 				3A9144A31E70F344005B1B6E /* Main.storyboard */,
 				3A9144A61E70F344005B1B6E /* Assets.xcassets */,
 				3A9144A81E70F344005B1B6E /* LaunchScreen.storyboard */,
 				3A9144AB1E70F344005B1B6E /* Info.plist */,
-				3A9144CD1E70F87F005B1B6E /* Test.swift */,
 				3A9144CF1E70FD6D005B1B6E /* Test.playground */,
 			);
 			path = OddbitBootcamp;
@@ -128,6 +127,47 @@
 				3A9144C11E70F344005B1B6E /* Info.plist */,
 			);
 			path = OddbitBootcampUITests;
+			sourceTree = "<group>";
+		};
+		3A9144D11E71231D005B1B6E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3A9144D61E7123CB005B1B6E /* Engine */,
+				3A9144D21E71231D005B1B6E /* Controllers */,
+				3A9144D31E71231D005B1B6E /* Models */,
+				3A9144D41E71231D005B1B6E /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3A9144D21E71231D005B1B6E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A9144DB1E713534005B1B6E /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3A9144D31E71231D005B1B6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A9144D41E71231D005B1B6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A9144D91E713096005B1B6E /* MovieViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A9144D61E7123CB005B1B6E /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Engine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +307,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A9144A21E70F344005B1B6E /* ViewController.swift in Sources */,
+				3A9144DC1E713534005B1B6E /* ViewController.swift in Sources */,
 				3A9144A01E70F344005B1B6E /* AppDelegate.swift in Sources */,
-				3A9144CE1E70F87F005B1B6E /* Test.swift in Sources */,
+				3A9144DA1E713096005B1B6E /* MovieViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
