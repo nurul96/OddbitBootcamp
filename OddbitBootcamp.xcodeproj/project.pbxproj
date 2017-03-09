@@ -49,6 +49,7 @@
 		3A9144BF1E70F344005B1B6E /* OddbitBootcampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddbitBootcampUITests.swift; sourceTree = "<group>"; };
 		3A9144C11E70F344005B1B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A9144CD1E70F87F005B1B6E /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		3A9144CF1E70FD6D005B1B6E /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 				3A9144A81E70F344005B1B6E /* LaunchScreen.storyboard */,
 				3A9144AB1E70F344005B1B6E /* Info.plist */,
 				3A9144CD1E70F87F005B1B6E /* Test.swift */,
+				3A9144CF1E70FD6D005B1B6E /* Test.playground */,
 			);
 			path = OddbitBootcamp;
 			sourceTree = "<group>";
@@ -516,6 +518,7 @@
 				3A9144C61E70F344005B1B6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A9144C71E70F344005B1B6E /* Build configuration list for PBXNativeTarget "OddbitBootcampTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +527,7 @@
 				3A9144C91E70F344005B1B6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A9144CA1E70F344005B1B6E /* Build configuration list for PBXNativeTarget "OddbitBootcampUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +536,7 @@
 				3A9144CC1E70F344005B1B6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

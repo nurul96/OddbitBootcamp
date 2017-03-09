@@ -10,8 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - Var
     var str: String = "String"
     let integer: Int = 1
+    
+    // MARK: - View Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
