@@ -16,6 +16,7 @@
 		3A9144DA1E713096005B1B6E /* MovieViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9144D91E713096005B1B6E /* MovieViewCell.swift */; };
 		3A9144DC1E713534005B1B6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9144DB1E713534005B1B6E /* ViewController.swift */; };
 		3A9144E21E715047005B1B6E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9144E11E715047005B1B6E /* Constant.swift */; };
+		3A9144E81E723290005B1B6E /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9144E71E723290005B1B6E /* MovieModel.swift */; };
 		42406458C738D4BA0BA0A58E /* Pods_OddbitBootcampTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D83019681705648025D68F /* Pods_OddbitBootcampTests.framework */; };
 		ABED4026276F34E1575B6C3B /* Pods_OddbitBootcampUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F4E84E23B387D70D052D17 /* Pods_OddbitBootcampUITests.framework */; };
 		F2A0D6633A72342C4EDDD4D8 /* Pods_OddbitBootcamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6D7031E946C1EBE4E9BAC1 /* Pods_OddbitBootcamp.framework */; };
@@ -57,6 +58,7 @@
 		3A9144DB1E713534005B1B6E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A9144DD1E714F80005B1B6E /* OddbitBootcamp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OddbitBootcamp-Bridging-Header.h"; sourceTree = "<group>"; };
 		3A9144E11E715047005B1B6E /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3A9144E71E723290005B1B6E /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		439E271CEF5A04B36B60DEE4 /* Pods-OddbitBootcampUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OddbitBootcampUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OddbitBootcampUITests/Pods-OddbitBootcampUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5C6D7031E946C1EBE4E9BAC1 /* Pods_OddbitBootcamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OddbitBootcamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D83019681705648025D68F /* Pods_OddbitBootcampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OddbitBootcampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +188,7 @@
 		3A9144D31E71231D005B1B6E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3A9144E71E723290005B1B6E /* MovieModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 			files = (
 				3A9144DC1E713534005B1B6E /* ViewController.swift in Sources */,
 				3A9144A01E70F344005B1B6E /* AppDelegate.swift in Sources */,
+				3A9144E81E723290005B1B6E /* MovieModel.swift in Sources */,
 				3A9144DA1E713096005B1B6E /* MovieViewCell.swift in Sources */,
 				3A9144E21E715047005B1B6E /* Constant.swift in Sources */,
 			);
