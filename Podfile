@@ -8,6 +8,7 @@ target 'OddbitBootcamp' do
   # Pods for OddbitBootcamp
   pod 'SDWebImage', '~>3.8'
   pod 'SwiftyJSON', :git => "https://github.com/SwiftyJSON/SwiftyJSON.git", :branch => 'master'
+  pod 'Alamofire', '~>4.1.0'
 
   target 'OddbitBootcampTests' do
     inherit! :search_paths
